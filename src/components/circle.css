@@ -1,0 +1,48 @@
+.bx{
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 50%;
+  
+  }
+  .cont{
+    margin-left: 400px;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .contanier{
+    width: 95%;
+    height: 600px;
+    border: 1px solid white;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+  }
+  .inbx{
+    width: 400px;
+    height: 400px;
+    border: 1px solid white;
+    margin-top: 120px;
+    margin-left: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+  .gg{
+    display: grid;
+    grid-template-rows: 120px 120px;
+    grid-template-columns: 120px 120px 120px;
+    grid-gap: 10px;
+    margin-top: 60px;
+  }
+  .bbx{
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+  .bx2 , .bx1,.bx3,.bx4,.bx5{
+    display: none;
+  }
