@@ -176,11 +176,11 @@ export const Circle = () => {
               Shoot
             </Button>
             <div className="gg">
-              <div className="bbx bx1">1t</div>
-              <div className="bbx bx2">2t</div>
-              <div className="bbx bx3">3t</div>
-              <div className="bbx bx4">4t</div>
-              <div className="bbx bx5">5t</div>
+              <div className="bbx bx1">1</div>
+              <div className="bbx bx2">2</div>
+              <div className="bbx bx3">3</div>
+              <div className="bbx bx4">4</div>
+              <div className="bbx bx5">5</div>
             </div>
           </div>
         </div>
