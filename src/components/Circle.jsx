@@ -8,6 +8,8 @@ import { useState } from "react";
 
 export const Circle = () => {
   const [val, setVal] = useState("");
+  const [tog, setTog] = useState(false);
+  const [tog1, setTog1] = useState(false);
   const {
     color1,
     color2,
@@ -57,55 +59,131 @@ export const Circle = () => {
               }}
               onClick={() => {
                 if (val == 1) {
-                  document.getElementsByClassName("bx1")[0].style.display =
-                    "block";
                   document.getElementsByClassName(
                     "bx1"
                   )[0].style.backgroundColor = color1;
-
-                  document.getElementsByClassName("bxx1")[0].style.display =
-                    "none";
+                  setTog(!tog);
+                  {
+                    tog
+                      ? (document.getElementsByClassName(
+                          "bxx1"
+                        )[0].style.display = "block")
+                      : (document.getElementsByClassName(
+                          "bxx1"
+                        )[0].style.display = "none");
+                  }
+                  setTog1(!tog1);
+                  {
+                    tog
+                      ? (document.getElementsByClassName(
+                          "bx1"
+                        )[0].style.display = "none")
+                      : (document.getElementsByClassName(
+                          "bx1"
+                        )[0].style.display = "block");
+                  }
                 }
                 if (val == 2) {
-                  document.getElementsByClassName("bx2")[0].style.display =
-                    "block";
                   document.getElementsByClassName(
                     "bx2"
                   )[0].style.backgroundColor = color2;
-
-                  document.getElementsByClassName("bxx2")[0].style.display =
-                    "none";
+                  setTog(!tog);
+                  {
+                    tog
+                      ? (document.getElementsByClassName(
+                          "bxx2"
+                        )[0].style.display = "block")
+                      : (document.getElementsByClassName(
+                          "bxx2"
+                        )[0].style.display = "none");
+                  }
+                  setTog1(!tog1);
+                  {
+                    tog
+                      ? (document.getElementsByClassName(
+                          "bx2"
+                        )[0].style.display = "none")
+                      : (document.getElementsByClassName(
+                          "bx2"
+                        )[0].style.display = "block");
+                  }
                 }
 
                 if (val == 3) {
-                  document.getElementsByClassName("bx3")[0].style.display =
-                    "block";
                   document.getElementsByClassName(
                     "bx3"
                   )[0].style.backgroundColor = color3;
-
-                  document.getElementsByClassName("bxx3")[0].style.display =
-                    "none";
+                  setTog(!tog);
+                  {
+                    tog
+                      ? (document.getElementsByClassName(
+                          "bxx3"
+                        )[0].style.display = "block")
+                      : (document.getElementsByClassName(
+                          "bxx3"
+                        )[0].style.display = "none");
+                  }
+                  setTog1(!tog1);
+                  {
+                    tog
+                      ? (document.getElementsByClassName(
+                          "bx3"
+                        )[0].style.display = "none")
+                      : (document.getElementsByClassName(
+                          "bx3"
+                        )[0].style.display = "block");
+                  }
                 }
                 if (val == 4) {
-                  document.getElementsByClassName("bx4")[0].style.display =
-                    "block";
                   document.getElementsByClassName(
                     "bx4"
                   )[0].style.backgroundColor = color4;
-
-                  document.getElementsByClassName("bxx4")[0].style.display =
-                    "none";
+                  setTog(!tog);
+                  {
+                    tog
+                      ? (document.getElementsByClassName(
+                          "bxx4"
+                        )[0].style.display = "block")
+                      : (document.getElementsByClassName(
+                          "bxx4"
+                        )[0].style.display = "none");
+                  }
+                  setTog1(!tog1);
+                  {
+                    tog
+                      ? (document.getElementsByClassName(
+                          "bx4"
+                        )[0].style.display = "none")
+                      : (document.getElementsByClassName(
+                          "bx4"
+                        )[0].style.display = "block");
+                  }
                 }
                 if (val == 5) {
-                  document.getElementsByClassName("bx5")[0].style.display =
-                    "block";
                   document.getElementsByClassName(
                     "bx5"
                   )[0].style.backgroundColor = color5;
 
-                  document.getElementsByClassName("bxx5")[0].style.display =
-                    "none";
+                  setTog(!tog);
+                  {
+                    tog
+                      ? (document.getElementsByClassName(
+                          "bxx5"
+                        )[0].style.display = "block")
+                      : (document.getElementsByClassName(
+                          "bxx5"
+                        )[0].style.display = "none");
+                  }
+                  setTog1(!tog1);
+                  {
+                    tog
+                      ? (document.getElementsByClassName(
+                          "bx5"
+                        )[0].style.display = "none")
+                      : (document.getElementsByClassName(
+                          "bx5"
+                        )[0].style.display = "block");
+                  }
                 }
                 if (val > 5) {
                   alert("Please Enter a Number Between 1 to 5");
