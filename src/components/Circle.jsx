@@ -10,6 +10,9 @@ export const Circle = () => {
   const [val, setVal] = useState("");
   const [tog, setTog] = useState(false);
   const [tog1, setTog1] = useState(false);
+  const [tog2, setTog2] = useState(false);
+  const [tog3, setTog3] = useState(false);
+  const [tog4, setTog4] = useState(false);
   const {
     color1,
     color2,
@@ -67,18 +70,14 @@ export const Circle = () => {
                     tog
                       ? (document.getElementsByClassName(
                           "bxx1"
-                        )[0].style.display = "block")
-                      : (document.getElementsByClassName(
-                          "bxx1"
-                        )[0].style.display = "none");
-                  }
-                  setTog1(!tog1);
-                  {
-                    tog
-                      ? (document.getElementsByClassName(
+                        )[0].style.display = "block") &&
+                        (document.getElementsByClassName(
                           "bx1"
                         )[0].style.display = "none")
                       : (document.getElementsByClassName(
+                          "bxx1"
+                        )[0].style.display = "none") &&
+                        (document.getElementsByClassName(
                           "bx1"
                         )[0].style.display = "block");
                   }
@@ -87,23 +86,19 @@ export const Circle = () => {
                   document.getElementsByClassName(
                     "bx2"
                   )[0].style.backgroundColor = color2;
-                  setTog(!tog);
-                  {
-                    tog
-                      ? (document.getElementsByClassName(
-                          "bxx2"
-                        )[0].style.display = "block")
-                      : (document.getElementsByClassName(
-                          "bxx2"
-                        )[0].style.display = "none");
-                  }
                   setTog1(!tog1);
                   {
-                    tog
+                    tog1
                       ? (document.getElementsByClassName(
+                          "bxx2"
+                        )[0].style.display = "block") &&
+                        (document.getElementsByClassName(
                           "bx2"
                         )[0].style.display = "none")
                       : (document.getElementsByClassName(
+                          "bxx2"
+                        )[0].style.display = "none") &&
+                        (document.getElementsByClassName(
                           "bx2"
                         )[0].style.display = "block");
                   }
@@ -113,23 +108,19 @@ export const Circle = () => {
                   document.getElementsByClassName(
                     "bx3"
                   )[0].style.backgroundColor = color3;
-                  setTog(!tog);
+                  setTog2(!tog2);
                   {
-                    tog
+                    tog2
                       ? (document.getElementsByClassName(
                           "bxx3"
-                        )[0].style.display = "block")
-                      : (document.getElementsByClassName(
-                          "bxx3"
-                        )[0].style.display = "none");
-                  }
-                  setTog1(!tog1);
-                  {
-                    tog
-                      ? (document.getElementsByClassName(
+                        )[0].style.display = "block") &&
+                        (document.getElementsByClassName(
                           "bx3"
                         )[0].style.display = "none")
                       : (document.getElementsByClassName(
+                          "bxx3"
+                        )[0].style.display = "none") &&
+                        (document.getElementsByClassName(
                           "bx3"
                         )[0].style.display = "block");
                   }
@@ -138,23 +129,19 @@ export const Circle = () => {
                   document.getElementsByClassName(
                     "bx4"
                   )[0].style.backgroundColor = color4;
-                  setTog(!tog);
+                  setTog3(!tog3);
                   {
-                    tog
+                    tog3
                       ? (document.getElementsByClassName(
                           "bxx4"
-                        )[0].style.display = "block")
-                      : (document.getElementsByClassName(
-                          "bxx4"
-                        )[0].style.display = "none");
-                  }
-                  setTog1(!tog1);
-                  {
-                    tog
-                      ? (document.getElementsByClassName(
+                        )[0].style.display = "block") &&
+                        (document.getElementsByClassName(
                           "bx4"
                         )[0].style.display = "none")
                       : (document.getElementsByClassName(
+                          "bxx4"
+                        )[0].style.display = "none") &&
+                        (document.getElementsByClassName(
                           "bx4"
                         )[0].style.display = "block");
                   }
@@ -163,24 +150,19 @@ export const Circle = () => {
                   document.getElementsByClassName(
                     "bx5"
                   )[0].style.backgroundColor = color5;
-
-                  setTog(!tog);
+                  setTog4(!tog4);
                   {
-                    tog
+                    tog4
                       ? (document.getElementsByClassName(
                           "bxx5"
-                        )[0].style.display = "block")
-                      : (document.getElementsByClassName(
-                          "bxx5"
-                        )[0].style.display = "none");
-                  }
-                  setTog1(!tog1);
-                  {
-                    tog
-                      ? (document.getElementsByClassName(
+                        )[0].style.display = "block") &&
+                        (document.getElementsByClassName(
                           "bx5"
                         )[0].style.display = "none")
                       : (document.getElementsByClassName(
+                          "bxx5"
+                        )[0].style.display = "none") &&
+                        (document.getElementsByClassName(
                           "bx5"
                         )[0].style.display = "block");
                   }
@@ -194,11 +176,11 @@ export const Circle = () => {
               Shoot
             </Button>
             <div className="gg">
-              <div className="bbx bx1"></div>
-              <div className="bbx bx2"></div>
-              <div className="bbx bx3"></div>
-              <div className="bbx bx4"></div>
-              <div className="bbx bx5"></div>
+              <div className="bbx bx1">1t</div>
+              <div className="bbx bx2">2t</div>
+              <div className="bbx bx3">3t</div>
+              <div className="bbx bx4">4t</div>
+              <div className="bbx bx5">5t</div>
             </div>
           </div>
         </div>
